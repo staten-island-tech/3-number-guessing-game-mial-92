@@ -14,7 +14,5 @@ while guess == False:
     if answer == RandomNumber:
         guess = True
         print("yay youre correct")
-    else:
-        print("youre wrong :c")
-        answer = input("guess again")
-        print(RandomNumber)
+    else: 
+        answer = int(input("Sorry this is wrong. Try again?? "))
