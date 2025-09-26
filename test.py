@@ -5,9 +5,16 @@ while number != 0:
      """
 
 import random
-RandomNumber = random.randint(1 , 10)
+RandomNumber = random.randint(1 , 10) 
 guess = False
-print(input("Guess a number from 1 to 10"))
+answer = int(input("Guess a number from 1 to 10"))
 
-
- 
+while guess == False:
+    
+    if answer == RandomNumber:
+        guess = True
+        print("yay youre correct")
+    else:
+        print("youre wrong :c")
+        answer = input("guess again")
+        print(RandomNumber)
